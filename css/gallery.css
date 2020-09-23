@@ -19,26 +19,26 @@
   border: var(--border) solid var(--border_color);
 }
 
-.js-gallery .none {
+.js-gallery div .none {
   display: none;
 }
 
-#flex {
+.flex {
   display: flex;
 }
 
-#flex-wrap-column {
+.flex-wrap-column {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
 
-#flex-wrap {
+.flex-wrap {
   display: flex;
   flex-wrap: wrap;
 }
 
-#overNumber {
+.overNumber {
   margin: 0;
   padding: 0;
   display: block;
@@ -50,11 +50,11 @@
   transition: all .3s ease 0s;
 }
 
-#overNumber:hover {
+.overNumber:hover {
   cursor: pointer;
   transform: scale(1.2);
 }
 
-#relativePhoto {
+.relativePhoto {
   position: relative;
 }
