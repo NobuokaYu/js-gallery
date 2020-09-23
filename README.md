@@ -4,7 +4,7 @@
 
 # DEMO
 
-You'll learn how the photos line up.The array of photos is based on Facebook.
+You'll understand how Js-gallery arranges your photos. The array of photos is based on Facebook. you can generate as many galleries as you like on one page.
 
 ## ONE
 When you only upload one photo
@@ -59,13 +59,13 @@ When there are five photos, there is one pattern.
 
 ![five](./sample-image/5.png)
 
-## SIX OR MORE
-If you have 6 or more photos, the number of photos remaining will be expressed as a number.The example below shows how to upload 7 photos.
+## SIX or MORE
+If you have 6 or more photos, the number of photos remaining will be expressed as a number. The example below shows how to upload 7 photos.
 
 ![six or more](./sample-image/6.png)
 
 ## OPTION
-Click on any of the photos to see a list of photos. The list will also show the excess photos that are not shown.This function is based on [appple/SmartPhoto](https://github.com/appleple/SmartPhoto).
+Click on any of the photos to see a list of photos. The list will also show the excess photos that are not shown. This function is based on [appple/SmartPhoto](https://github.com/appleple/SmartPhoto).
 ![index](./sample-image/index.png)
 
 You can change the width and color of the border as you wish. By default, the numbers are set to the same color as the border.
@@ -139,3 +139,4 @@ Change the border_color value in gallery.css
 }
 ```
 # Author
+Yu Nobuoka
