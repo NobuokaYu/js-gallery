@@ -1,12 +1,6 @@
-:root {
-  --border:5px;
-  --border_color:white;
-}
-
 .js-gallery {
-  padding: var(--border);
-  background-color: var(--border_color);
   margin: 0 auto;
+  border: 1px solid black;
 }
 
 .js-gallery div {
@@ -16,7 +10,6 @@
 .js-gallery div img {
   object-fit: cover;
   display: block;
-  border: var(--border) solid var(--border_color);
 }
 
 .js-gallery div .none {
@@ -44,7 +37,6 @@
   display: block;
   position: absolute;
   z-index: 2;
-  color: var(--border_color);
   opacity: 0.7;
   font-weight: bold;
   transition: all .3s ease 0s;

@@ -1,19 +1,12 @@
-:root{
-  --border:5px; //jsのborderも変えてください
-  --border_color:white;
-}
-
 .js-gallery{
-  padding:var(--border);
-  background-color: var(--border_color);
   margin: 0 auto;
+  border: 1px solid black;
 
   div{
     display: inline-block;
     img{
       object-fit: cover;
       display: block;
-      border: var(--border) solid var(--border_color);
     }
     .none{
       display: none;
@@ -42,7 +35,6 @@
   display: block;
   position: absolute;
   z-index: 2;
-  color: var(--border_color);
   opacity: 0.7;
   font-weight: bold;
   transition: all .3s ease 0s;
