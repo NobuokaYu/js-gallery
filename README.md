@@ -133,5 +133,10 @@ new Gallery('js-gallery',{
   BORDERCOLOR:'white'
 });
 ```
+
+## 5. Caution
+Don't add "box-sizing:border-box"
+
+
 # Author
 Yu Nobuoka
