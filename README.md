@@ -76,8 +76,9 @@ You can change the width and color of the border as you wish. By default, the nu
 
 # Usage
 ## 1. Please set up the following to be loaded from the html file.
-   -  This library's css
-   -  This library's javascript
+   -  favorite css
+   -  gallery.js
+   -  script.js
    -  [appple/SmartPhoto](https://github.com/appleple/SmartPhoto)
 
 ## 2. It forms an html structure as follows
@@ -107,6 +108,7 @@ You can change the width and color of the border as you wish. By default, the nu
   </div>
 
   <script src="https://unpkg.com/smartphoto@latest/js/smartphoto.min.js"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
   <script type="text/javascript" src="./js/gallery.js"></script>
 
 </body>
@@ -114,29 +116,22 @@ You can change the width and color of the border as you wish. By default, the nu
   -  Add a js-gallery class to the outermost div.
   -  Add a class called js-smartPhoto to the div that covers each item. This is a setup for using [appple/SmartPhoto](https://github.com/appleple/SmartPhoto). See [appple/SmartPhoto](https://github.com/appleple/SmartPhoto) for other details.
 
-## 3. Various settings
-### How to change the size of the gallery
-Change the statement defining size in gallery.js
+## 3. Default
+Write the following in your script.js
 ```javascript
-let size = photoArea.clientWidth = 700;
+new Gallery('js-gallery');
 ```
 
-### How to change the width of the border
-Change the border value in gallery.js and gallery.css
+## 4. Options
+SIZE : gallery size  
+BORDER : border width  
+BORDERCOLOR : background and number color
 ```javascript
-const border = 5;
-```
-```css
-:root {
-  --border:5px;
-}
-```
-### How to change the color of the border
-Change the border_color value in gallery.css
-```css
-:root {
-  --border_color:white;
-}
+new Gallery('js-gallery',{
+  SIZE:700,
+  BORDER:30,
+  BORDERCOLOR:'white'
+});
 ```
 # Author
 Yu Nobuoka
