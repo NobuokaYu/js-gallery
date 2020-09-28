@@ -10,11 +10,6 @@ class Gallery {
     for (let k = 0; k < document.getElementsByClassName(className).length; k++) {
 
       let photoArea = document.getElementsByClassName(className)[k];
-      //いらないhrが自動補完されるのでそれを消す
-        let hr = photoArea.getElementsByTagName('hr');
-        for (let i = 0; i < hr.length; i++) {
-          hr[i].remove();
-        };
 
       //写真の枚数を調べる
       let photoNum = photoArea.childElementCount;
