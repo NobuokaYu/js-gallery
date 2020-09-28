@@ -1,6 +1,7 @@
 .js-gallery {
   margin: 0 auto;
   border: 1px solid black;
+  box-sizing: content-box !important;
 }
 
 .js-gallery div {
