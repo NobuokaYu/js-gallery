@@ -1,16 +1,45 @@
-class Gallery {
-  constructor(Size,Border,BorderColor) {
-    for (let k = 0; k < document.getElementsByClassName('js-gallery').length; k++) {
+// デフォルトのオプション
+const OPTIONS = {
+    SIZE : 400,
+    BORDER : 5,
+    BORDERCOLOR: 'white',
+}
 
-      let photoArea = document.getElementsByClassName('js-gallery')[k];
+class Gallery {
+  constructor(className,options) {
+    for (let k = 0; k < document.getElementsByClassName(className).length; k++) {
+
+      let photoArea = document.getElementsByClassName(className)[k];
       //いらないhrが自動補完されるのでそれを消す
-        var hr = photoArea.getElementsByTagName('hr');
-        for (var i = 0; i < hr.length; i++) {
+        let hr = photoArea.getElementsByTagName('hr');
+        for (let i = 0; i < hr.length; i++) {
           hr[i].remove();
         };
 
       //写真の枚数を調べる
       let photoNum = photoArea.childElementCount;
+
+      let Options = OPTIONS;//まずデフォルトを継承
+
+      // 引数が設定されたとき
+      if (options !== undefined && options !== null){
+        if('SIZE' in options && typeof options.SIZE == 'number'){
+          Options.SIZE = options.SIZE;
+        };
+        if('BORDER' in options && typeof options.BORDER == 'number'){
+          Options.BORDER = options.BORDER;
+        };
+        if('BORDERCOLOR' in options && typeof options.BORDERCOLOR == 'string'){
+          Options.BORDERCOLOR = options.BORDERCOLOR;
+        };
+      };
+
+      //OPTIONの値から変数に代入
+      let Size = Options.SIZE;
+      let Border = Options.BORDER;
+      let BorderColor = Options.BORDERCOLOR;
+
+
 
       //サイズ調整
       let size = Size; //デフォルトは700px
